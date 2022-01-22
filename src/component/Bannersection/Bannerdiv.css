@@ -1,0 +1,16 @@
+.parent{
+    height: 600px;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    background-size: cover;
+}
+
+.smallbox{
+    height:300px;
+    overflow-x: hidden;
+    background-position: center;
+    background-size: cover;
+}

@@ -1,0 +1,24 @@
+.container-fluid{
+    padding: 0 !important;
+}
+a{
+    text-decoration: none;
+}
+nav .top-section{
+    background:#EEEEEE;
+    padding: 0 !important;
+}
+nav .top-section ul li{
+    font-size: 10px;
+    color:#000;
+}
+nav .bottom-section .navbar-brand img{
+height: 20px;
+}
+nav .bottom-section  ul li{
+    font-weight: 600;
+}
+nav .bottom-section .navline{
+display: flex;
+align-items: center;
+}
