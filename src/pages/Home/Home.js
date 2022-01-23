@@ -2,7 +2,11 @@ import React, { Component } from "react";
 import Bannerdiv from "../../component/Bannersection/Bannerdiv";
 import Smallbanner from "../../component/small_poster/poster-3/Smallbanner";
 import "./Home.css";
-import { CATEGORIES_product, Products, Smallbannerimg } from "../../Global/JS/json";
+import {
+  CATEGORIES_product,
+  Products,
+  Smallbannerimg,
+} from "../../Global/JS/json";
 import LineBanner from "../../component/small_poster/LineBanner/LineBanner";
 import { labels } from "../../Global/JS/Label";
 import Productsparent from "../../component/small_poster/Products/products-parent/Productsparent";
@@ -24,7 +28,9 @@ export class Home extends Component {
   }
 
   render() {
-      let Men_product_filter = Products.filter(result=> result.for.includes('men')) 
+    let Men_product_filter = Products.filter((result) =>
+      result.for.includes("men")
+    );
     return (
       <>
         <section>
@@ -46,7 +52,7 @@ export class Home extends Component {
         <section>
           <div className="container-fluid">
             <div className="row mt-4 gx-3">
-              {Smallbannerimg.slice(0,3).map((el) => (
+              {Smallbannerimg.slice(0, 3).map((el) => (
                 <Smallbanner
                   col="col-4"
                   key={el.id}
@@ -88,10 +94,12 @@ export class Home extends Component {
         </section>
 
         <section>
-        <h4 className="label text-center my-5 ">{labels.DISCOUNT_PE_DISCOUNT}</h4>
+          <h4 className="label text-center my-5 ">
+            {labels.DISCOUNT_PE_DISCOUNT}
+          </h4>
           <div className="container-fluid">
             <div className="row mt-4 gx-3">
-              {Smallbannerimg.slice(3,7).map((el) => (
+              {Smallbannerimg.slice(3, 7).map((el) => (
                 <Smallbanner
                   col="col-6"
                   key={el.id}
@@ -104,29 +112,35 @@ export class Home extends Component {
         </section>
 
         <section>
-        <h4 className="label text-center my-3 pb-4">{labels.NEW_ARRIVALS_FOR_MEN}</h4>
+          <h4 className="label text-center my-3 pb-4">
+            {labels.NEW_ARRIVALS_FOR_MEN}
+          </h4>
           <div className="container-fluid">
             <div className="row ms-auto">
-             {Men_product_filter.slice(0,5).map(Products => (Products.for) === "men" ? 
-                 <Productsparent
-                  key={Products.id}
-                  img={Products.img}
-                  content={Products.title}
-                  css="col-2 mx-4"
-                  price = {Products.price}
-                  strike ={Products.strike}
-                  Link={Products.categories}
-                  data = 'product-price'
-                />: "" )}
+              {Men_product_filter.slice(0, 5).map((Products) =>
+                Products.for === "men" ? (
+                  <Productsparent
+                    key={Products.id}
+                    img={Products.img}
+                    content={Products.title}
+                    css="col-2 mx-4"
+                    price={Products.price}
+                    strike={Products.strike}
+                    Link={Products.categories}
+                    data="product-price"
+                  />
+                ) : (
+                  ""
+                )
+              )}
             </div>
           </div>
         </section>
 
         <section>
-
           <div className="container-fluid">
             <div className="row mt-4 gx-3">
-              {Smallbannerimg.slice(0,3).map((el) => (
+              {Smallbannerimg.slice(0, 3).map((el) => (
                 <Smallbanner
                   col="col-4"
                   key={el.id}
@@ -139,20 +153,27 @@ export class Home extends Component {
         </section>
 
         <section>
-        <h4 className="label text-center my-3 pb-4">{labels.NEW_ARRIVALS_FOR_MEN}</h4>
+          <h4 className="label text-center my-3 pb-4">
+            {labels.NEW_ARRIVALS_FOR_MEN}
+          </h4>
           <div className="container-fluid">
             <div className="row ms-auto">
-             {Men_product_filter.slice(0,5).map(Products => (Products.for) === "men" ? 
-                 <Productsparent
-                  key={Products.id}
-                  img={Products.img}
-                  content={Products.title}
-                  css="col-2 mx-4"
-                  price = {Products.price}
-                  strike ={Products.strike}
-                  Link={Products.categories}
-                  data = 'product-price'
-                />: "" )}
+              {Men_product_filter.slice(0, 5).map((Products) =>
+                Products.for === "men" ? (
+                  <Productsparent
+                    key={Products.id}
+                    img={Products.img}
+                    content={Products.title}
+                    css="col-2 mx-4"
+                    price={Products.price}
+                    strike={Products.strike}
+                    Link={Products.categories}
+                    data="product-price"
+                  />
+                ) : (
+                  ""
+                )
+              )}
             </div>
           </div>
         </section>

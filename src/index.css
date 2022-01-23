@@ -1,13 +1,23 @@
-body{
+body {
   overflow-x: hidden;
 }
-.labels{
-  font-size:20px;
+.labels {
+  font-size: 20px;
   font: 800;
-  font-family:  Helvetica, sans-serif;
+  font-family: Helvetica, sans-serif;
 }
 
 ::selection {
   background: yellow;
-  color:#fff;
+  color: #fff;
+}
+
+ul li {
+  list-style: none;
+}
+
+.d-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

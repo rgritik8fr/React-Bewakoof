@@ -1,0 +1,43 @@
+.Account input {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #000;
+  margin-top: 4rem;
+  padding: 0.5rem;
+}
+
+.Account input:focus {
+  outline: none;
+  animation: rr 26s linear;
+}
+
+@keyframes rr {
+  0% {
+    border-bottom: 2px solid red;
+    border-width: 10%;
+  }
+  25% {
+    border-bottom: 2px solid red;
+    border-width: 25%;
+  }
+  50% {
+    border-bottom: 2px solid red;
+    border-width: 50%;
+  }
+
+  100% {
+    border-bottom: 2px solid red;
+    border-width: 100%;
+  }
+}
+.AccountSubmit input {
+  width: 100%;
+  border: none;
+  background: #42a2a2;
+  margin-top: 4rem;
+  padding: 1rem;
+  color: #fff;
+  font-size: 1.2rem;
+  border-radius: 20px;
+  font-weight: 500;
+}

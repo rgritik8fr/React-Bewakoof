@@ -1,0 +1,22 @@
+.Login {
+  height: 100vh;
+}
+
+.socialIcon i {
+  padding: 1.2rem;
+
+  border-radius: 50%;
+  color: #fff;
+}
+
+.googleIcon i {
+  background: red;
+}
+
+.facebookIcon i {
+  background: #4267b2;
+}
+
+.twitterIcon i {
+  background: #3498db;
+}
