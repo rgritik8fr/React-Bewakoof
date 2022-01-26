@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/React-Bewakoof/static/css/main.86d01377.css",
+    "main.js": "/React-Bewakoof/static/js/main.74980d9b.js",
+    "static/js/787.109caf73.chunk.js": "/React-Bewakoof/static/js/787.109caf73.chunk.js",
+    "index.html": "/React-Bewakoof/index.html",
+    "main.86d01377.css.map": "/React-Bewakoof/static/css/main.86d01377.css.map",
+    "main.74980d9b.js.map": "/React-Bewakoof/static/js/main.74980d9b.js.map",
+    "787.109caf73.chunk.js.map": "/React-Bewakoof/static/js/787.109caf73.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.86d01377.css",
+    "static/js/main.74980d9b.js"
+  ]
+}
